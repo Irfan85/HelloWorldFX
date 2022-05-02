@@ -4,4 +4,5 @@ module HelloWorldFX {
 	
 	opens sample;
 	opens layouts;
+	opens controls;
 }
