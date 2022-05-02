@@ -1,20 +1,17 @@
 <?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
 
-<GridPane fx:controller="layouts.Controller" xmlns:fx="javafx.com/fxml" alignment="center" hgap="10" vgap="10" gridLinesVisible="true">
-	<columnConstraints>
-		<!-- We want the first column to occupy 50% of the scene width -->
-		<ColumnConstraints percentWidth="50.0"/>
-		<!-- Same goes for the second column -->
-		<ColumnConstraints percentWidth="50.0"/>
-	</columnConstraints>
+<GridPane fx:controller="layouts.Controller" xmlns:fx="javafx.com/fxml" alignment="top_center" hgap="10" vgap="10" gridLinesVisible="true">
 	
+	<padding>
+		<Insets top="10"/>
+	</padding>
 	
-	<Button text="Button One" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+	<Button text="Button One" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
 	<Button text="Button Two" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
 	<Button text="Button Three" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
-	<Button text="Long Button Four" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+	<Button text="Long Button Four" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
 	<Button text="Button Five" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
 
 </GridPane>
