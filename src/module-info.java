@@ -3,4 +3,5 @@ module HelloWorldFX {
 	requires javafx.controls;
 	
 	opens sample;
+	opens layouts;
 }
